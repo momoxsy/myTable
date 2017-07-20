@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>table-examples</title>
+        <link rel="stylesheet" href="myTable.css" />
+        <style>
+            .table-show{
+                width: 800px;
+                margin: 50px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="table-show">
+        </div>
+    </body>
+    <script src="myTable.js"></script>
+    <script>
+        var $el = document.querySelector('.table-show'),
+            url = 'http://121.40.146.4:5000/query?query="腾讯的产品的营收"';
+        MyTable.myTable({
+            $el: $el,
+            ajax: {
+                url: url
+            } 
+        });
+    </script>
+</html>
