@@ -145,8 +145,7 @@ var MyTable = (function() {
                 
                 this.theadArr = this.data.theadArr;
                 this.tbodyArr = this.data.tbodyArr;
-                
-                this.handles();
+
                 next();
 
             }else{
